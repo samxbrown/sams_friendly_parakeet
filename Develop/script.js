@@ -20,5 +20,11 @@ function writePassword() {
 
 }
 
+function generatePassword() {
+  var passwordLength = parseInt(prompt("Enter the desired length of the password (between 8 and 128 characters):"))
+while (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)) 
+  passwordLength = parseInt(prompt("Invalid length. Please enter a number between 8 and 128:"));
+}
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);

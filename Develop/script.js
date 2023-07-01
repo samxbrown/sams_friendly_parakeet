@@ -3,6 +3,10 @@ var lowercaseCharacters = "abcdefghijklmnopqrstuvwxyz";
 var uppercaseCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numbers = "12345678910";
 var specialCharacers = "!@#$%^&*()_+~`|}{[]:;?><,./-=";
+var includeLowercase = ("Include lowercase characters?");
+var includeUppercase = ("Include uppercase characters?");
+var includeNumbers = ("Include numeric characters?");
+var includeSpecial = ("Include special characters?");
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");

@@ -26,29 +26,33 @@ function generatePassword() {
   var includeNumbers = confirm("Include numeric characters?");
   var includeSpecial = confirm("Include special characters?");
 
-  if(includeLowercase === true) {
+  if (includeLowercase === true) {
     allCharacters += lowercaseCharacters
     console.log(allCharacters)
   }
 
-  if(includeUppercase === true) {
+  if (includeUppercase === true) {
     allCharacters += uppercaseCharacters
     console.log(allCharacters)
   }
 
-  if(includeNumbers === true) {
+  if (includeNumbers === true) {
     allCharacters += numbers
     console.log(allCharacters)
   }
 
-  if(includeSpecial === true) {
+  if (includeSpecial === true) {
     allCharacters += specialCharacers
     console.log(allCharacters)
   }
-var randomPassword = ""
-for(var i = 0; i < passwordLength; i++) {
-randomPassword += allCharacters[Math.floor(Math.random()*allCharacters.length)];
-}
+  var randomPassword = ""
+  for (var i = 0; i < passwordLength; i++) {
+    randomPassword += allCharacters[Math.floor(Math.random() * allCharacters.length)];
+    console.log(randomPassword)
+  }
+
+  return randomPassword
+
 }
 
 // Add event listener to generate button

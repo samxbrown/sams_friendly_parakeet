@@ -45,7 +45,10 @@ function generatePassword() {
     allCharacters += specialCharacers
     console.log(allCharacters)
   }
-
+var randomPassword = ""
+for(var i = 0; i < passwordLength; i++) {
+randomPassword += allCharacters[Math.floor(Math.random()*allCharacters.length)];
+}
 }
 
 // Add event listener to generate button

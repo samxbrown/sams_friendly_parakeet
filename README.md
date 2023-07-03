@@ -1,7 +1,7 @@
 # Password Generator Starter Code
 
-
-
+# Description
+This starter code contains a codebase for a user to generate a random password.
 
 
 

@@ -28,27 +28,22 @@ function generatePassword() {
 
   if (includeLowercase === true) {
     allCharacters += lowercaseCharacters
-    console.log(allCharacters)
   }
 
   if (includeUppercase === true) {
     allCharacters += uppercaseCharacters
-    console.log(allCharacters)
   }
 
   if (includeNumbers === true) {
     allCharacters += numbers
-    console.log(allCharacters)
   }
 
   if (includeSpecial === true) {
     allCharacters += specialCharacers
-    console.log(allCharacters)
   }
   var randomPassword = ""
   for (var i = 0; i < passwordLength; i++) {
     randomPassword += allCharacters[Math.floor(Math.random() * allCharacters.length)];
-    console.log(randomPassword)
   }
 
   return randomPassword

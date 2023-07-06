@@ -30,6 +30,7 @@ Once you have the project set up locally, you can:
 https://samxbrown.github.io/sams_friendly_parakeet/
 
 # Credits
+I would like to give credit to my tutor, Abdullah Al Hilfi, for helping me while I work on this code.
 
 # License
 N/A
